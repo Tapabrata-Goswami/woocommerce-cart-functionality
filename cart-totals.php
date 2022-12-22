@@ -114,13 +114,23 @@ defined( 'ABSPATH' ) || exit;
 		global $cart_item, $cart_item_key;
 		// $product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
 		// echo $product_id;
+		// foreach( WC()->cart->get_cart() as $cart_item ){
+		// 	$product_id = $cart_item['product_id'];
+		// 	break;
+		// }
+
+		$products_ids_array = array();
+
 		foreach( WC()->cart->get_cart() as $cart_item ){
-			$product_id = $cart_item['product_id'];
-			break;
+    	$products_ids_array[] = $cart_item['product_id'];
 		}
+
+		// echo $products_ids_array[0];
+
+		// echo $products_ids_array[1];
 		// echo $product_id;
 		// $product_id = 13;
-		if($product_id == 3343){ 
+		if(($products_ids_array[1] == NULL) and ($products_ids_array[0] == 3343)){ 
 			// $product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
 			// echo $product_id;
 	?>
@@ -132,7 +142,7 @@ defined( 'ABSPATH' ) || exit;
 			.hide_checkout{
 				background-color: #e00d7b;
 				border-radius: 8px;
-				/*height: 64px;*/
+				/height: 64px;/
 				padding: 2px;
 				width: auto;
 			}
@@ -200,7 +210,7 @@ defined( 'ABSPATH' ) || exit;
     .popup{
     background-color: #ffffff;
     background-image: url("https://babymelon.in/wp-content/uploads/2022/12/get-glowing-skin11.png");
-    /*width: 450px;*/
+    /width: 450px;/
     padding: 30px 40px;
     position: absolute;
     transform: translate(-50%,-50%);
