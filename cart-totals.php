@@ -105,7 +105,9 @@ defined( 'ABSPATH' ) || exit;
 	
 
 	
-<!-- This Part Made By Tapabrata Goswami -->
+<!-- This Part Made By @Tapabrata Goswami -->
+
+<!-- Banner PHP code  -->
 	
 <?php 
 		global $woocommerce;  
@@ -174,9 +176,7 @@ defined( 'ABSPATH' ) || exit;
 
 
 
-
-
-<!--Upsell Content-->
+<!--Banner HTML code-->
 
     <div id="hpopup" class="popup">
         <button id="close">&times;</button>
@@ -186,7 +186,10 @@ defined( 'ABSPATH' ) || exit;
             </div>
         </div>
     </div>
+
     
+<!--Banner CSS code-->
+
     <style>
     
     .btn_box{
@@ -236,6 +239,9 @@ defined( 'ABSPATH' ) || exit;
 
     </style>
     
+
+<!-- Banner JS code -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
