@@ -125,7 +125,7 @@ defined( 'ABSPATH' ) || exit;
 		// foreach( WC()->cart->get_cart() as $cart_item ){
 		// 	$product_id = $cart_item['product_id'];
 		// 	break;
-		// }
+
         
         $total_iteam =  WC()->cart->get_cart_contents_count();
         // echo $total_iteam;
